@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GOLDEN STAPLES - Static Website
 
 This is a static website version of the GOLDEN STAPLES Spring Boot application. The site showcases premium Sattu products with information about recipes, health benefits, and the manufacturing process.
@@ -126,3 +127,7 @@ This static website was converted from a Spring Boot application located at:
 
 © 2025 GOLDEN STAPLES. All rights reserved.
 
+=======
+# golden-staples-website
+A static website for golden staples
+>>>>>>> 047628799ac57ba64a4a872da28ee99a8558080b
