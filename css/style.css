@@ -1,0 +1,725 @@
+/* Custom Styles for GOLDEN STAPLES */
+
+:root {
+    --primary-color: #d4af37;
+    --secondary-color: #8b6914;
+    --text-dark: #2c3e50;
+    --text-light: #6c757d;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    zoom: 0.8;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding-top: 0;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.15;
+    z-index: -1;
+    pointer-events: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+/* Navigation */
+.navbar {
+    padding: 0.75rem 0;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.98) !important;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    margin: 0;
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    color: var(--text-dark) !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b7 100%);
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="%23d4af37" opacity="0.1"/></svg>');
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 3;
+}
+
+.brand-name {
+    color: var(--primary-color);
+    display: block;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 3;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 3;
+}
+
+.hero-logo {
+    position: relative;
+    z-index: 3;
+    opacity: 1;
+}
+
+@media (min-width: 1200px) {
+    .hero-logo {
+        max-width: 700px !important;
+    }
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 3;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* Section Styles */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 3rem;
+}
+
+/* Products Section */
+.products-section {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: relative;
+    z-index: 1;
+}
+
+.product-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 2px solid transparent;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+    border-color: var(--primary-color);
+}
+
+.product-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b7 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.product-card h3 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.product-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+}
+
+.product-features {
+    list-style: none;
+    text-align: left;
+}
+
+.product-features li {
+    padding: 0.5rem 0;
+    color: var(--text-dark);
+}
+
+.product-features i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+/* Recipes Section */
+.recipes-section {
+    background-color: rgba(248, 249, 250, 0.95);
+    position: relative;
+    z-index: 1;
+}
+
+.recipe-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.recipe-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b7 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.recipe-card h4 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.recipe-card p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.recipe-tags {
+    margin-top: 1rem;
+}
+
+.recipe-tags .badge {
+    margin: 0.25rem;
+    padding: 0.5rem 1rem;
+}
+
+/* Process Section */
+.process-section {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: relative;
+    z-index: 1;
+}
+
+.process-step {
+    text-align: center;
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: 15px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.process-step:hover {
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b7 100%);
+    transform: translateY(-5px);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+}
+
+.process-step h4 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.process-step p {
+    color: var(--text-light);
+}
+
+.process-highlight {
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b7 100%);
+    padding: 2.5rem;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.process-highlight h4 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.process-highlight h4 i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.process-highlight p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+    background-color: rgba(248, 249, 250, 0.95);
+    position: relative;
+    z-index: 1;
+}
+
+.benefit-card {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+}
+
+.benefit-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b7 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-icon i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.benefit-card h4 {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.benefit-card p {
+    color: var(--text-light);
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: relative;
+    z-index: 1;
+}
+
+.contact-info {
+    background: var(--bg-light);
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+.contact-item {
+    margin-bottom: 2rem;
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-item h5 {
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+    color: var(--text-light);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: var(--secondary-color);
+    transform: translateY(-5px);
+    color: var(--white);
+}
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a !important;
+}
+
+.footer p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .product-card,
+    .recipe-card,
+    .benefit-card {
+        margin-bottom: 2rem;
+    }
+    
+    .hero-logo {
+        max-width: 300px !important;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .logo-img {
+        height: 40px;
+    }
+    
+    .contact-info {
+        padding: 2rem 1.5rem;
+    }
+}
+
+/* Tailwind-Compatible Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.animation-delay-200 {
+    animation-delay: 0.2s;
+}
+
+.animation-delay-400 {
+    animation-delay: 0.4s;
+}
+
+.animation-delay-600 {
+    animation-delay: 0.6s;
+}
+
+/* Enhanced hover effects with Tailwind utilities */
+.product-card,
+.recipe-card,
+.benefit-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card::before,
+.recipe-card::before,
+.benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.1), transparent);
+    transition: left 0.5s;
+}
+
+.product-card:hover::before,
+.recipe-card:hover::before,
+.benefit-card:hover::before {
+    left: 100%;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced focus states */
+*:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+button:focus,
+a:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    animation: pulse-whatsapp 2s infinite;
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    background-color: #20BA5A !important;
+}
+
+@keyframes pulse-whatsapp {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+    }
+}
+
+/* Responsive WhatsApp Button */
+@media (max-width: 768px) {
+    .whatsapp-float {
+        width: 55px !important;
+        height: 55px !important;
+        bottom: 20px !important;
+        right: 20px !important;
+    }
+    
+    .whatsapp-float i {
+        font-size: 1.75rem !important;
+    }
+}
+
+/* Modal Styling */
+.modal {
+    z-index: 1055;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1050;
+}
+
+.modal-dialog {
+    margin: 1.75rem auto;
+}
+
+.modal-content {
+    border: none;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image-container img {
+    transition: transform 0.3s ease;
+}
+
+.product-image-container:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
+    
+    .product-image-container {
+        margin-bottom: 1.5rem;
+    }
+    
+    .product-image-container img {
+        max-height: 300px !important;
+    }
+}
+

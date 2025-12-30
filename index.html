@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLDEN STAPLES - Premium Sattu Products</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'golden': '#d4af37',
+                        'golden-dark': '#8b6914',
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'playfair': ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm backdrop-blur-md bg-opacity-95 transition-all duration-300">
+        <div class="container">
+            
+            <button class="navbar-toggler focus:outline-none focus:ring-2 focus:ring-golden rounded-lg transition-all" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link transition-all duration-300 hover:text-golden hover:font-semibold" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link transition-all duration-300 hover:text-golden hover:font-semibold" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link transition-all duration-300 hover:text-golden hover:font-semibold" href="#recipes">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link transition-all duration-300 hover:text-golden hover:font-semibold" href="#how-we-make-it">How We Make It</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link transition-all duration-300 hover:text-golden hover:font-semibold" href="#health-benefits">Health Benefits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link transition-all duration-300 hover:text-golden hover:font-semibold" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="hero-title animate-fade-in">Welcome to <span class="brand-name">GOLDEN STAPLES</span></h1>
+                    <p class="hero-subtitle animate-fade-in animation-delay-200">Premium Quality Sattu - Your Journey to Health & Wellness</p>
+                    <p class="hero-description animate-fade-in animation-delay-400">Discover the authentic taste of traditional sattu, made with love and care using time-honored methods. Experience the perfect blend of nutrition and flavor.</p>
+                    <a href="#products" class="btn btn-primary btn-lg mt-3 transform transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-golden/50 animate-fade-in animation-delay-600">Explore Our Products</a>
+                </div>
+                <div class="col-lg-6 text-center animate-fade-in animation-delay-400 d-flex align-items-center justify-content-center">
+                    <img src="images/logo.png" alt="GOLDEN STAPLES Logo" class="hero-logo transform transition-all duration-300 hover:scale-105" style="max-width: 600px; width: 100%; height: auto; opacity: 1; filter: drop-shadow(0 15px 40px rgba(212, 175, 55, 0.4));">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Premium Products</h2>
+                <p class="section-subtitle">Discover our range of authentic sattu products</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="product-card group cursor-pointer" data-bs-toggle="modal" data-bs-target="#classicSattuModal">
+                        <div class="product-image transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" style="background: none; border-radius: 50%; overflow: hidden; padding: 0;">
+                            <img src="images/classicSattu.png" alt="Classic Sattu" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h3 class="group-hover:text-golden transition-colors duration-300">Classic Sattu</h3>
+                        <p>Traditional roasted gram flour, ground to perfection. The authentic taste you've been looking for.</p>
+                        <ul class="product-features">
+                            <li class="flex items-center gap-2"><i class="bi bi-check-circle text-golden"></i> 100% Natural</li>
+                            <li class="flex items-center gap-2"><i class="bi bi-check-circle text-golden"></i> Rich in Protein</li>
+                            <li class="flex items-center gap-2"><i class="bi bi-check-circle text-golden"></i> No Preservatives</li>
+                        </ul>
+                        <button class="btn btn-primary btn-sm mt-3" type="button">View Details</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card group cursor-pointer" data-bs-toggle="modal" data-bs-target="#flavoredSattuModal">
+                        <div class="product-image transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+                            <i class="bi bi-box-seam product-icon"></i>
+                        </div>
+                        <h3 class="group-hover:text-golden transition-colors duration-300">Flavored Sattu</h3>
+                        <p>Our signature sattu with natural flavors. Perfect for refreshing drinks and delicious recipes.</p>
+                        <ul class="product-features">
+                            <li class="flex items-center gap-2"><i class="bi bi-check-circle text-golden"></i> Natural Flavors</li>
+                            <li class="flex items-center gap-2"><i class="bi bi-check-circle text-golden"></i> Ready to Use</li>
+                            <li class="flex items-center gap-2"><i class="bi bi-check-circle text-golden"></i> Versatile</li>
+                        </ul>
+                        <button class="btn btn-primary btn-sm mt-3" type="button">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="recipes-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Delicious Recipes from Sattu</h2>
+                <p class="section-subtitle">Explore amazing ways to enjoy sattu</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="recipe-card group" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sattuDrinkModal">
+                        <div class="recipe-image transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl" style="background: none; border-radius: 50%; overflow: hidden; padding: 0;">
+                            <img src="images/Sattu-drink.png" alt="Sattu Drink" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Sattu Drink</h4>
+                        <p>A refreshing summer drink made with sattu, lemon, mint, and spices. Perfect to beat the heat!</p>
+                        <div class="recipe-tags">
+                            <span class="badge bg-primary px-3 py-1 rounded-full text-xs font-semibold">Refreshing</span>
+                            <span class="badge bg-success px-3 py-1 rounded-full text-xs font-semibold">Healthy</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm mt-3 transform transition-all duration-300 hover:scale-105 hover:shadow-lg" type="button">View Recipe</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="recipe-card group" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sattuParathaModal">
+                        <div class="recipe-image transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl" style="background: none; border-radius: 50%; overflow: hidden; padding: 0;">
+                            <img src="images/Sattu-Paratha.png" alt="Sattu Paratha" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Sattu Paratha</h4>
+                        <p>Delicious stuffed flatbread with a spicy sattu filling. A perfect breakfast or snack option.</p>
+                        <div class="recipe-tags">
+                            <span class="badge bg-primary px-3 py-1 rounded-full text-xs font-semibold">Traditional</span>
+                            <span class="badge bg-success px-3 py-1 rounded-full text-xs font-semibold">Filling</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm mt-3 transform transition-all duration-300 hover:scale-105 hover:shadow-lg" type="button">View Recipe</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="recipe-card group" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sattuLadooModal">
+                        <div class="recipe-image transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl" style="background: none; border-radius: 50%; overflow: hidden; padding: 0;">
+                            <img src="images/Sattu-ladoo.png" alt="Sattu Ladoo" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Sattu Ladoo</h4>
+                        <p>Sweet and nutritious ladoos made with sattu, jaggery, and ghee. A healthy dessert option.</p>
+                        <div class="recipe-tags">
+                            <span class="badge bg-primary px-3 py-1 rounded-full text-xs font-semibold">Sweet</span>
+                            <span class="badge bg-success px-3 py-1 rounded-full text-xs font-semibold">Nutritious</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm mt-3 transform transition-all duration-300 hover:scale-105 hover:shadow-lg" type="button">View Recipe</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="recipe-card group" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#sattuHalwaModal">
+                        <div class="recipe-image transform transition-all duration-300 group-hover:scale-110 group-hover:shadow-xl" style="background: none; border-radius: 50%; overflow: hidden; padding: 0;">
+                            <img src="images/Sattu-Halwa.png" alt="Sattu Halwa" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Sattu Halwa</h4>
+                        <p>Rich and creamy halwa made with sattu, perfect for special occasions and celebrations.</p>
+                        <div class="recipe-tags">
+                            <span class="badge bg-primary px-3 py-1 rounded-full text-xs font-semibold">Festive</span>
+                            <span class="badge bg-success px-3 py-1 rounded-full text-xs font-semibold">Rich</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm mt-3 transform transition-all duration-300 hover:scale-105 hover:shadow-lg" type="button">View Recipe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Make It Section -->
+    <section id="how-we-make-it" class="process-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">How We Make It</h2>
+                <p class="section-subtitle">Our traditional process ensures quality and authenticity</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step group hover:shadow-xl transition-all duration-300">
+                        <div class="step-number transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">1</div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Selection</h4>
+                        <p>We carefully select the finest quality gram (chana) from trusted farmers.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step group hover:shadow-xl transition-all duration-300">
+                        <div class="step-number transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">2</div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Cleaning</h4>
+                        <p>Thorough cleaning and sorting to ensure only the best grains are used.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step group hover:shadow-xl transition-all duration-300">
+                        <div class="step-number transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">3</div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Roasting</h4>
+                        <p>Traditional slow roasting method to bring out the authentic flavor and aroma.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step group hover:shadow-xl transition-all duration-300">
+                        <div class="step-number transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">4</div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Grinding</h4>
+                        <p>Fine grinding using traditional stone mills to preserve nutritional value.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="process-highlight">
+                        <h4><i class="bi bi-star-fill"></i> Quality Assurance</h4>
+                        <p>At GOLDEN STAPLES, we follow strict quality control measures at every step. Our sattu is made in hygienic conditions, ensuring it's safe, pure, and nutritious. We never compromise on quality and always deliver the best to our customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Benefits Section -->
+    <section id="health-benefits" class="benefits-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Health Benefits of Sattu</h2>
+                <p class="section-subtitle">Nature's gift for your health and wellness</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card group">
+                        <div class="benefit-icon transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Rich in Protein</h4>
+                        <p>High-quality plant protein that aids in muscle growth, repair, and overall body development.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card group">
+                        <div class="benefit-icon transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                            <i class="bi bi-arrow-down-circle"></i>
+                        </div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Low Glycemic Index</h4>
+                        <p>Helps regulate blood sugar levels, making it ideal for diabetics and those watching their sugar intake.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card group">
+                        <div class="benefit-icon transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                            <i class="bi bi-flower1"></i>
+                        </div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">High Dietary Fiber</h4>
+                        <p>Promotes digestive health, prevents constipation, and keeps you feeling full longer.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card group">
+                        <div class="benefit-icon transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                            <i class="bi bi-droplet"></i>
+                        </div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Natural Coolant</h4>
+                        <p>Acts as a natural body coolant, keeping you hydrated and refreshed during hot summers.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card group">
+                        <div class="benefit-icon transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                            <i class="bi bi-gem"></i>
+                        </div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Essential Minerals</h4>
+                        <p>Rich in iron, magnesium, potassium, and other essential minerals for optimal health.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="benefit-card group">
+                        <div class="benefit-icon transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+                            <i class="bi bi-speedometer2"></i>
+                        </div>
+                        <h4 class="group-hover:text-golden transition-colors duration-300">Weight Management</h4>
+                        <p>Low in calories and high in fiber, making it perfect for weight management and healthy living.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-info text-center">
+                        <div class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <h5>Email</h5>
+                            <p>info@goldenstaples.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <h5>Phone</h5>
+                            <p>
+                                <a href="tel:+919933384015" class="text-decoration-none text-golden hover:text-golden-dark transition-colors duration-300">+91-9933384015</a>
+                                <span class="mx-2">|</span>
+                                <a href="tel:+918984253439" class="text-decoration-none text-golden hover:text-golden-dark transition-colors duration-300">+91-8984253439</a>
+                            </p>
+                        </div>
+                        <div class="contact-item mt-4">
+                            <a href="https://wa.me/919933384015?text=Hi%2C%20I%20would%20like%20to%20order%20Sattu%20from%20Golden%20Staples" 
+                               target="_blank" 
+                               class="btn btn-success btn-lg transform transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-green-500/50 d-inline-flex align-items-center gap-2"
+                               style="background-color: #25D366; border-color: #25D366;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" style="margin-right: 8px;">
+                                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.087.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                                </svg>
+                                <span>Order via WhatsApp</span>
+                            </a>
+                        </div>
+                        <div class="social-links mt-4 flex justify-center gap-4">
+                            <a href="#" class="social-link transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:shadow-xl"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-link transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:shadow-xl"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-link transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:shadow-xl"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="social-link transform transition-all duration-300 hover:scale-125 hover:rotate-12 hover:shadow-xl"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sattu Drink Modal -->
+    <div class="modal fade" id="sattuDrinkModal" tabindex="-1" aria-labelledby="sattuDrinkModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sattuDrinkModalLabel">
+                        <i class="bi bi-cup-straw"></i> Sattu Drink Recipe
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <div class="recipe-image mx-auto mb-3" style="background: none; border-radius: 50%; overflow: hidden; padding: 0;">
+                            <img src="images/Sattu-drink.png" alt="Sattu Drink" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h4>Sattu Drink</h4>
+                        <p class="text-muted">A refreshing summer drink made with sattu, lemon, mint, and spices. Perfect to beat the heat!</p>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="mb-3">Watch the Recipe Video</h5>
+                        <a href="https://www.youtube.com/watch?v=Lceeq2LlPsg&pp=ygULc2F0dHUgZHJpbms%3D" target="_blank" class="btn btn-danger btn-lg transform transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-red-500/50">
+                            <i class="bi bi-youtube"></i> Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sattu Paratha Modal -->
+    <div class="modal fade" id="sattuParathaModal" tabindex="-1" aria-labelledby="sattuParathaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sattuParathaModalLabel">
+                        <i class="bi bi-egg-fried"></i> Sattu Paratha Recipe
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <div class="recipe-image mx-auto mb-3" style="background: none; border-radius: 50%; overflow: hidden; padding: 0;">
+                            <img src="images/Sattu-Paratha.png" alt="Sattu Paratha" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h4>Sattu Paratha</h4>
+                        <p class="text-muted">Delicious stuffed flatbread with a spicy sattu filling. A perfect breakfast or snack option.</p>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="mb-3">Watch the Recipe Video</h5>
+                        <a href="https://www.youtube.com/watch?v=4gr3OhF07N0" target="_blank" class="btn btn-danger btn-lg transform transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-red-500/50">
+                            <i class="bi bi-youtube"></i> Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sattu Ladoo Modal -->
+    <div class="modal fade" id="sattuLadooModal" tabindex="-1" aria-labelledby="sattuLadooModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sattuLadooModalLabel">
+                        <i class="bi bi-cake"></i> Sattu Ladoo Recipe
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <div class="recipe-image mx-auto mb-3" style="background: none; border-radius: 50%; overflow: hidden; padding: 0;">
+                            <img src="images/Sattu-ladoo.png" alt="Sattu Ladoo" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h4>Sattu Ladoo</h4>
+                        <p class="text-muted">Sweet and nutritious ladoos made with sattu, jaggery, and ghee. A healthy dessert option.</p>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="mb-3">Watch the Recipe Video</h5>
+                        <a href="https://www.youtube.com/watch?v=0x-n1djFIGc" target="_blank" class="btn btn-danger btn-lg transform transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-red-500/50">
+                            <i class="bi bi-youtube"></i> Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Classic Sattu Modal -->
+    <div class="modal fade" id="classicSattuModal" tabindex="-1" aria-labelledby="classicSattuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                <div class="modal-header border-0 pb-0" style="background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b7 100%); padding: 2.5rem 2.5rem 1.5rem;">
+                    <div class="w-100">
+                        <h3 class="modal-title fw-bold text-dark mb-2" id="classicSattuModalLabel" style="font-family: 'Playfair Display', serif; font-size: 2rem;">
+                            <i class="bi bi-box-seam text-golden me-3" style="font-size: 1.5rem;"></i> Classic Sattu
+                        </h3>
+                        <p class="text-dark mb-0" style="font-size: 1rem; font-weight: 500; letter-spacing: 0.5px;">Premium Quality • Authentic Taste</p>
+                    </div>
+                    <button type="button" class="btn-close btn-close-lg" data-bs-dismiss="modal" aria-label="Close" style="opacity: 0.7;"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6 text-center">
+                            <div class="product-image-container p-4" style="background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b7 100%); border-radius: 15px;">
+                                <img src="images/classicSattu.png" alt="Classic Sattu" class="img-fluid" style="max-height: 400px; width: auto; border-radius: 10px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-details">
+                                <h5 class="fw-bold mb-3" style="color: var(--text-dark); font-family: 'Playfair Display', serif; font-size: 1.5rem;">Product Details</h5>
+                                <p class="text-dark mb-4" style="line-height: 1.8; font-size: 1rem;">Traditional roasted gram flour, ground to perfection. The authentic taste you've been looking for.</p>
+                                
+                                <div class="features-list mb-4">
+                                    <h6 class="fw-bold mb-3 text-dark" style="font-size: 1.2rem; font-family: 'Playfair Display', serif;">Key Features:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <i class="bi bi-check-circle-fill text-golden me-3" style="font-size: 1.25rem; margin-top: 0.2rem;"></i>
+                                            <span class="text-dark" style="font-size: 1rem; line-height: 1.7;"><strong style="font-size: 1.05rem;">100% Natural</strong> - Made from pure, organic ingredients</span>
+                                        </li>
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <i class="bi bi-check-circle-fill text-golden me-3" style="font-size: 1.25rem; margin-top: 0.2rem;"></i>
+                                            <span class="text-dark" style="font-size: 1rem; line-height: 1.7;"><strong style="font-size: 1.05rem;">Rich in Protein</strong> - High-quality plant protein for your health</span>
+                                        </li>
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <i class="bi bi-check-circle-fill text-golden me-3" style="font-size: 1.25rem; margin-top: 0.2rem;"></i>
+                                            <span class="text-dark" style="font-size: 1rem; line-height: 1.7;"><strong style="font-size: 1.05rem;">No Preservatives</strong> - Pure and natural, just as nature intended</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="order-section mt-4 pt-4" style="border-top: 2px solid #f5e6d3;">
+                                    <h6 class="fw-bold mb-3 text-center text-dark" style="font-size: 1.2rem; font-family: 'Playfair Display', serif;">Ready to Order?</h6>
+                                    <a href="https://wa.me/919933384015?text=Hi%2C%20I%20would%20like%20to%20order%20Classic%20Sattu%20from%20Golden%20Staples" 
+                                       target="_blank" 
+                                       class="btn w-100 btn-lg d-flex align-items-center justify-content-center gap-2 transform transition-all duration-300 hover:scale-105"
+                                       style="background-color: #25D366; border-color: #25D366; color: white; padding: 1rem; font-weight: 600; border-radius: 12px; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); font-size: 1rem;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                                            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.087.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                                        </svg>
+                                        <span>Order Classic Sattu on WhatsApp</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flavored Sattu Modal -->
+    <div class="modal fade" id="flavoredSattuModal" tabindex="-1" aria-labelledby="flavoredSattuModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 20px; overflow: hidden;">
+                <div class="modal-header border-0 pb-0" style="background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b7 100%); padding: 2.5rem 2.5rem 1.5rem;">
+                    <div class="w-100">
+                        <h3 class="modal-title fw-bold text-dark mb-2" id="flavoredSattuModalLabel" style="font-family: 'Playfair Display', serif; font-size: 2rem;">
+                            <i class="bi bi-box-seam text-golden me-3" style="font-size: 1.5rem;"></i> Flavored Sattu
+                        </h3>
+                        <p class="text-dark mb-0" style="font-size: 1rem; font-weight: 500; letter-spacing: 0.5px;">Coming Soon • Natural Flavors</p>
+                    </div>
+                    <button type="button" class="btn-close btn-close-lg" data-bs-dismiss="modal" aria-label="Close" style="opacity: 0.7;"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6 text-center">
+                            <div class="product-image-container p-5 d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #f5e6d3 0%, #e8d5b7 100%); border-radius: 15px; min-height: 400px;">
+                                <div class="text-center">
+                                    <i class="bi bi-hourglass-split text-golden" style="font-size: 4rem; opacity: 0.6;"></i>
+                                    <h5 class="mt-4 fw-bold text-dark" style="font-family: 'Playfair Display', serif;">We are working on this product</h5>
+                                    <p class="text-muted mt-2">Stay tuned for updates!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product-details">
+                                <h5 class="fw-bold mb-3" style="color: var(--text-dark); font-family: 'Playfair Display', serif; font-size: 1.5rem;">Product Details</h5>
+                                <p class="text-dark mb-4" style="line-height: 1.8; font-size: 1rem;">Our signature sattu with natural flavors. Perfect for refreshing drinks and delicious recipes.</p>
+                                
+                                <div class="features-list mb-4">
+                                    <h6 class="fw-bold mb-3 text-dark" style="font-size: 1.2rem; font-family: 'Playfair Display', serif;">Expected Features:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <i class="bi bi-check-circle-fill text-golden me-3" style="font-size: 1.25rem; margin-top: 0.2rem;"></i>
+                                            <span class="text-dark" style="font-size: 1rem; line-height: 1.7;"><strong style="font-size: 1.05rem;">Natural Flavors</strong> - Enhanced with authentic natural flavors</span>
+                                        </li>
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <i class="bi bi-check-circle-fill text-golden me-3" style="font-size: 1.25rem; margin-top: 0.2rem;"></i>
+                                            <span class="text-dark" style="font-size: 1rem; line-height: 1.7;"><strong style="font-size: 1.05rem;">Ready to Use</strong> - Convenient and easy to prepare</span>
+                                        </li>
+                                        <li class="mb-3 d-flex align-items-start">
+                                            <i class="bi bi-check-circle-fill text-golden me-3" style="font-size: 1.25rem; margin-top: 0.2rem;"></i>
+                                            <span class="text-dark" style="font-size: 1rem; line-height: 1.7;"><strong style="font-size: 1.05rem;">Versatile</strong> - Perfect for various recipes and drinks</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="order-section mt-4 pt-4" style="border-top: 2px solid #f5e6d3;">
+                                    <div class="alert alert-info border-0 shadow-sm p-3" style="background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); border-radius: 12px;">
+                                        <div class="d-flex align-items-start">
+                                            <i class="bi bi-info-circle-fill text-primary me-3" style="font-size: 1.5rem; margin-top: 0.2rem;"></i>
+                                            <div>
+                                                <h6 class="fw-bold mb-2 text-dark" style="font-size: 1.2rem; font-family: 'Playfair Display', serif;">Coming Soon!</h6>
+                                                <p class="mb-0 text-dark" style="line-height: 1.7; font-size: 1rem;">
+                                                    We are currently working on bringing you this amazing product. We will update this page once we have the Flavored Sattu ready for you. Thank you for your patience!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sattu Halwa Modal -->
+    <div class="modal fade" id="sattuHalwaModal" tabindex="-1" aria-labelledby="sattuHalwaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sattuHalwaModalLabel">
+                        <i class="bi bi-cup-hot"></i> Sattu Halwa Recipe
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <div class="recipe-image mx-auto mb-3" style="background: none; border-radius: 50%; overflow: hidden; padding: 0;">
+                            <img src="images/Sattu-Halwa.png" alt="Sattu Halwa" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <h4>Sattu Halwa</h4>
+                        <p class="text-muted">Rich and creamy halwa made with sattu, perfect for special occasions and celebrations.</p>
+                    </div>
+                    <div class="text-center">
+                        <h5 class="mb-3">Watch the Recipe Video</h5>
+                        <a href="https://www.youtube.com/watch?v=aySJdUih1RQ" target="_blank" class="btn btn-danger btn-lg transform transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-red-500/50">
+                            <i class="bi bi-youtube"></i> Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919933384015?text=Hi%2C%20I%20would%20like%20to%20order%20Sattu%20from%20Golden%20Staples" 
+       target="_blank" 
+       class="whatsapp-float position-fixed bottom-0 end-0 m-4 z-50 d-flex align-items-center justify-content-center rounded-circle shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-2xl"
+       style="width: 60px; height: 60px; background-color: #25D366; color: white; text-decoration: none;"
+       title="Order via WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.087.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4 border-t-2 border-golden/20">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="transition-colors duration-300 hover:text-golden">&copy; 2025 GOLDEN STAPLES. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="transition-colors duration-300 hover:text-golden">Made with <i class="bi bi-heart-fill text-danger animate-pulse"></i> for your health</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
