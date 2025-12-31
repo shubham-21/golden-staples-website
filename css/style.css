@@ -669,8 +669,8 @@ a:focus {
 }
 
 .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
+    background-color: transparent;
+    backdrop-filter: none;
     z-index: 1050;
 }
 
